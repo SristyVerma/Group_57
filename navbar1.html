@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        a:link{
-            color: white;
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nav Bar</title>
+        <style>
+            .navbar{
+                display: grid;
+                height: 40px;
+                grid-template-columns: repeat(2,50%);
+                background-color: navy;
+                border-radius: 20px;
 
-        }
-        a:visited{
-            color:rgb(73, 175, 73);
-        }
-        a:hover{
-            color:hotpink
+            }
 
-        }
-        a:active{
-            color:aqua
-        }
-        div{
-            width:98%;
-            height:40px;
-            background-color: rgb(5, 5, 72);
-            margin: auto;
-            display: grid;
-            grid-template-columns: 5% 75% 5% 5% 5% 5%;
-            border-radius: 20px;
-            padding-left: 10px;
+            .navbar>.left{
+                color: white;
+                height: fit-content;
+                justify-content: flex-start;
+
+            }
             
-            
-            justify-content: right;
-        }
-        
-        div>div{
-            border-radius: 1px solid white;
-            color:white;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-        }
-        #white{
-            color: white;
-        }
-    </style>
-    
-    <title>Document</title>
+            .navbar>.left>div{
+                color: white;
+                margin:5px 15px;
+                width: fit-content;
+                height: fit-content;
+                justify-content: flex-start;
+
+            }
+            .navbar>.right{
+                color: white;
+                display: grid;
+                grid-template-columns: repeat(4,auto);
+                justify-content: flex-end;
+                
+            }
+            .right>div{
+                margin: 5px 20px;
+                width: fit-content;
+                height: fit-content;
+                color: white;
+            }
+            #white{
+                color: white;
+            }
+
+        </style>
 </head>
 <body>
-    <div>
-        <div>Reebok</div>
-        <div></div>
-        <div  ><a  id="white" href="https://visionary-cheesecake-24eae1.netlify.app/">Men</a></div>
-        <div>Women</div>
-        <div><a  id="white" href="https://silly-blini-093fee.netlify.app/">Login</a></div>
-        <div><a  id="white" href="https://regal-klepon-10c234.netlify.app/">Signup</a></div>
-        
-    </div>
+    <header>
+        <div class="navbar">
+            <div class="left">
+               <div><a id="white" href="https://www.reebok.com/us"> Reebok</a></div> 
+            </div>
+            <div class="right">
+                <div  ><a  id="white" href="https://visionary-cheesecake-24eae1.netlify.app/">Men</a></div>
+                <div> <a  id="white" href="https://brilliant-daifuku-541d00.netlify.app/">Women</a></div>
+                <div><a  id="white" href="https://silly-blini-093fee.netlify.app/">Login</a></div>
+                <div><a  id="white" href="https://regal-klepon-10c234.netlify.app/">Signup</a></div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
+
